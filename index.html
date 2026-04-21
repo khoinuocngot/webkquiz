@@ -8,11 +8,11 @@
     name="description"
     content="Tải KQuiz Android APK v1.0.2. Nhập tài liệu, tạo quiz và ôn tập nhanh hơn với giao diện học tập thông minh."
   >
-  <meta name="theme-color" content="#111826">
+  <meta name="theme-color" content="#111827">
   <meta property="og:title" content="KQuiz | Tải ứng dụng học tập chính thức">
   <meta
     property="og:description"
-    content="Trang tải chính thức của KQuiz với ảnh hero lớn, cụm nút tải app và phần giới thiệu cực gọn về các chức năng chính."
+    content="Trang tải chính thức của KQuiz với ảnh hero lớn, cụm nút tải app trong hero và phần giới thiệu gọn về các chức năng chính."
   >
   <meta property="og:type" content="website">
   <meta property="og:image" content="./assets/hero/hero-desktop.png">
@@ -37,8 +37,8 @@
       </a>
 
       <nav class="topbar__nav" aria-label="Điều hướng chính">
-        <a href="#download">Tải app</a>
-        <a href="#features">Tính năng</a>
+        <a class="topbar__link" href="#download">Tải app</a>
+        <a class="topbar__link" href="#features">Tính năng</a>
       </nav>
 
       <a class="topbar__cta" href="./downloads/KquizV1.0.2.apk" download>Tải APK</a>
@@ -58,6 +58,11 @@
         </picture>
 
         <div class="hero__downloads" aria-label="Tải KQuiz">
+          <div class="hero__downloads-head">
+            <span class="hero__downloads-kicker">Download</span>
+            <strong>Chọn nền tảng bạn muốn tải</strong>
+          </div>
+
           <a class="download-button download-button--primary" href="./downloads/KquizV1.0.2.apk" download>
             <span>Android APK</span>
             <small>KquizV1.0.2.apk</small>
@@ -86,25 +91,30 @@
         <div class="features__head">
           <span class="eyebrow">Core features</span>
           <h2>Chức năng chính</h2>
+          <p>Vừa đủ để người mới nhìn qua là hiểu KQuiz làm được gì.</p>
         </div>
 
         <div class="features__grid">
-          <article class="feature">
+          <article class="feature feature--blue">
+            <span class="feature__meta">INPUT</span>
             <h3>Nhập từ file</h3>
             <p>PDF, TXT, ảnh.</p>
           </article>
 
-          <article class="feature">
+          <article class="feature feature--mint">
+            <span class="feature__meta">SETS</span>
             <h3>Bộ học</h3>
             <p>Tạo bộ học nhanh.</p>
           </article>
 
-          <article class="feature">
+          <article class="feature feature--violet">
+            <span class="feature__meta">QUIZ</span>
             <h3>Quiz & Flashcard</h3>
             <p>Học và ôn lại gọn.</p>
           </article>
 
-          <article class="feature">
+          <article class="feature feature--peach">
+            <span class="feature__meta">STATS</span>
             <h3>Thống kê học tập</h3>
             <p>Theo dõi tiến độ.</p>
           </article>
