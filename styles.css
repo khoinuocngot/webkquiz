@@ -196,15 +196,15 @@ a {
 
 .hero__downloads {
   position: absolute;
-  left: clamp(24px, 4vw, 78px);
-  bottom: clamp(28px, 5vw, 82px);
+  left: clamp(40px, 4.8vw, 94px);
+  bottom: clamp(16px, 3.8vw, 58px);
   display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
-  gap: 8px;
-  width: min(370px, calc(100% - 48px));
-  padding: 12px;
+  grid-template-columns: repeat(2, minmax(165px, 1fr));
+  gap: 9px;
+  width: min(408px, calc(100% - 48px));
+  padding: 13px;
   border: 1px solid rgba(255, 255, 255, 0.84);
-  border-radius: 20px;
+  border-radius: 22px;
   background: linear-gradient(180deg, rgba(248, 250, 255, 0.9), rgba(244, 247, 255, 0.82));
   box-shadow: 0 26px 56px rgba(90, 106, 170, 0.22);
   backdrop-filter: blur(18px);
@@ -252,14 +252,14 @@ a {
 }
 
 .hero__downloads-head strong {
-  font-size: 0.84rem;
+  font-size: 0.92rem;
   line-height: 1.25;
 }
 
 .hero__downloads-head p {
   margin: 0;
   color: var(--text-soft);
-  font-size: 0.74rem;
+  font-size: 0.8rem;
   line-height: 1.35;
 }
 
@@ -279,13 +279,13 @@ a {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.72);
   color: var(--text);
-  font-size: 0.62rem;
+  font-size: 0.68rem;
   font-weight: 700;
 }
 
 .download-button {
-  min-height: 54px;
-  padding: 10px 12px;
+  min-height: 60px;
+  padding: 11px 13px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -302,12 +302,12 @@ a {
 }
 
 .download-button span {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   font-weight: 800;
 }
 
 .download-button small {
-  font-size: 0.68rem;
+  font-size: 0.74rem;
   color: var(--text-soft);
 }
 
@@ -481,7 +481,7 @@ a {
 
 @media (max-width: 1120px) {
   .hero__downloads {
-    width: min(360px, calc(100% - 40px));
+    width: min(392px, calc(100% - 40px));
   }
 
   .features__grid {
