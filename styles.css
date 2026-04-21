@@ -131,8 +131,14 @@ a {
   margin: 0;
 }
 
+.hero__image {
+  display: block;
+  width: 100%;
+}
+
 .hero__image img {
   width: 100%;
+  max-width: none;
   border-radius: 0;
 }
 
