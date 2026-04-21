@@ -2,37 +2,50 @@
 
 Landing page tĩnh cho KQuiz, tối ưu để deploy trực tiếp lên GitHub Pages từ root repo.
 
-## Repo này có gì
+## Có gì trong repo này
 
-- Landing page sáng theo phong cách pastel xanh dương chủ đạo
+- Giao diện landing page mới theo hướng `premium, ít chữ, nhiều hình`
+- Hero riêng cho desktop và mobile
 - Nút tải thật cho Android APK: `KquizV1.0.2.apk`
-- 3 nền tảng còn lại đang để `Coming soon`
+- Google Play, App Store và Web App đang để `Coming soon`
 - Không cần build step, không cần framework, không cần backend
 
-## Cấu trúc
+## Cấu trúc chính
 
 - `index.html`: landing page chính
-- `styles.css`: giao diện và responsive cho desktop + mobile
+- `styles.css`: giao diện và responsive cho desktop, tablet, mobile
 - `script.js`: hiệu ứng reveal nhẹ khi cuộn
-- `assets/`: icon và favicon
-- `downloads/`: file APK để người dùng tải trực tiếp
-- `.nojekyll`: giúp GitHub Pages deploy đúng dạng static thuần
+- `assets/hero/logo-k.jpg`: logo KQuiz
+- `assets/hero/hero-desktop.png`: ảnh minh họa hero cho desktop
+- `assets/hero/hero-mobile.png`: ảnh minh họa hero cho mobile
+- `downloads/KquizV1.0.2.apk`: file APK tải trực tiếp
+- `.nojekyll`: giúp GitHub Pages chạy static thuần
 
 ## Cập nhật APK bằng Git Bash
 
 Khi có bản APK mới:
 
 1. Thay file trong thư mục `downloads/`
-2. Cập nhật version trong `index.html`
-3. Push lại repo
+2. Cập nhật version và tên file trong `index.html`
+3. Nếu cần, sửa lại mô tả trong `README.md`
+4. Push lại repo
 
 Ví dụ:
 
 ```bash
 git add .
-git commit -m "Update landing page to APK v1.0.2"
+git commit -m "Update landing page to APK v1.0.3"
 git push origin main
 ```
+
+## Cập nhật ảnh giao diện
+
+Nếu muốn đổi lại ảnh minh họa:
+
+1. Thay `assets/hero/hero-desktop.png`
+2. Thay `assets/hero/hero-mobile.png`
+3. Nếu muốn đổi logo, thay `assets/hero/logo-k.jpg`
+4. Push lại repo
 
 ## Bật GitHub Pages
 
@@ -45,11 +58,12 @@ git push origin main
    - Folder: `/ (root)`
 5. Save
 
-Sau đó GitHub Pages sẽ xuất bản landing page từ root repo.
+Sau đó GitHub Pages sẽ xuất bản trang từ root repo.
 
-## Gợi ý cập nhật về sau
+## Gợi ý nâng cấp về sau
 
-- Khi có CH Play: thay card `Coming soon` bằng link thật
-- Khi có App Store: thay card `Coming soon` bằng link thật
-- Khi có bản web: thay card `Coming soon` bằng URL web app
-- Nếu sau này muốn repo nhẹ hơn, có thể chuyển APK sang GitHub Releases rồi đổi lại nút tải
+- Thay mockup hiện tại bằng ảnh app thật khi cần
+- Thêm link Google Play khi store sẵn sàng
+- Thêm link App Store khi có bản iOS
+- Thêm link bản web khi web app hoàn thiện
+- Nếu muốn repo nhẹ hơn, có thể chuyển APK sang GitHub Releases rồi đổi lại nút tải
