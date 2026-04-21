@@ -6,13 +6,13 @@
   <title>KQuiz | Tải ứng dụng học tập chính thức</title>
   <meta
     name="description"
-    content="Tải KQuiz Android APK v1.0.2. Nhập tài liệu, tạo quiz, ôn bằng flashcard và học lại nhanh hơn với giao diện sáng, gọn và hiện đại."
+    content="Tải KQuiz Android APK v1.0.2. Nhập tài liệu, tạo quiz và ôn tập nhanh hơn với giao diện học tập thông minh."
   >
-  <meta name="theme-color" content="#edf4ff">
+  <meta name="theme-color" content="#111826">
   <meta property="og:title" content="KQuiz | Tải ứng dụng học tập chính thức">
   <meta
     property="og:description"
-    content="Trang tải chính thức của KQuiz với bản Android APK đã sẵn sàng, giao diện premium, ít chữ và bám sát mockup desktop lẫn mobile."
+    content="Trang tải chính thức của KQuiz với ảnh hero lớn, cụm nút tải app và phần giới thiệu cực gọn về các chức năng chính."
   >
   <meta property="og:type" content="website">
   <meta property="og:image" content="./assets/hero/hero-desktop.png">
@@ -26,12 +26,8 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <div class="page-orb page-orb--blue"></div>
-  <div class="page-orb page-orb--lavender"></div>
-  <div class="page-orb page-orb--mint"></div>
-
-  <header class="site-header">
-    <div class="site-header__inner">
+  <header class="topbar">
+    <div class="topbar__inner">
       <a class="brand" href="#top" aria-label="KQuiz">
         <img class="brand__icon" src="./assets/hero/logo-k.jpg" alt="Logo KQuiz">
         <span class="brand__copy">
@@ -40,194 +36,97 @@
         </span>
       </a>
 
-      <nav class="site-nav" aria-label="Điều hướng chính">
+      <nav class="topbar__nav" aria-label="Điều hướng chính">
         <a href="#download">Tải app</a>
         <a href="#features">Tính năng</a>
-        <a href="#showcase">Desktop & Mobile</a>
       </nav>
 
-      <a class="site-header__cta" href="./downloads/KquizV1.0.2.apk" download>Tải APK</a>
+      <a class="topbar__cta" href="./downloads/KquizV1.0.2.apk" download>Tải APK</a>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="hero__frame reveal">
-        <picture class="hero__art">
+    <section class="hero">
+      <div class="hero__inner">
+        <picture class="hero__image">
           <source media="(max-width: 860px)" srcset="./assets/hero/hero-mobile.png">
           <img
             src="./assets/hero/hero-desktop.png"
-            alt="Minh họa KQuiz với logo K, các thẻ tính năng và mockup giao diện ứng dụng."
+            alt="Ảnh hero của KQuiz với logo K, các thẻ chức năng và mockup ứng dụng."
             fetchpriority="high"
           >
         </picture>
       </div>
+    </section>
 
-      <div class="hero__dock reveal">
-        <h1 class="sr-only">Tải KQuiz cho Android</h1>
-
-        <div class="hero__summary">
-          <span class="hero__label">Bản Android chính thức</span>
-          <strong class="hero__title">Tải APK v1.0.2 và bắt đầu dùng KQuiz trên Android</strong>
-          <p class="hero__note">Tải trực tiếp • Android 11+ • Nhập tài liệu, tạo quiz và ôn lại nhanh hơn.</p>
+    <section id="download" class="download">
+      <div class="download__inner">
+        <div class="download__copy">
+          <span class="eyebrow">Download</span>
+          <h1>Tải KQuiz</h1>
+          <p>Bản Android đã sẵn sàng. Ba nền tảng còn lại sẽ mở sau.</p>
         </div>
 
-        <div class="hero__actions">
-          <a class="button button--primary" href="./downloads/KquizV1.0.2.apk" download>
-            <span>Tải bản APK</span>
+        <div class="download__buttons">
+          <a class="download-button download-button--primary" href="./downloads/KquizV1.0.2.apk" download>
+            <span>Android APK</span>
             <small>KquizV1.0.2.apk</small>
           </a>
 
-          <a class="button button--secondary" href="#features">
-            <span>Xem tính năng chính</span>
-            <small>Ít chữ, đúng trọng tâm</small>
-          </a>
+          <button class="download-button" type="button" disabled>
+            <span>Google Play</span>
+            <small>Coming soon</small>
+          </button>
+
+          <button class="download-button" type="button" disabled>
+            <span>iOS App Store</span>
+            <small>Coming soon</small>
+          </button>
+
+          <button class="download-button" type="button" disabled>
+            <span>Web App</span>
+            <small>Coming soon</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <div class="features__inner">
+        <div class="features__head">
+          <span class="eyebrow">Core features</span>
+          <h2>Chức năng chính</h2>
         </div>
 
-        <div class="hero__meta" aria-label="Trạng thái phát hành">
-          <span class="meta-pill">Android ready</span>
-          <span class="meta-pill meta-pill--soft">Smart Scan Pro</span>
-          <span class="meta-pill meta-pill--soft">Offline study</span>
+        <div class="features__grid">
+          <article class="feature">
+            <h3>Nhập từ file</h3>
+            <p>PDF, TXT, ảnh.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Bộ học</h3>
+            <p>Tạo bộ học nhanh.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Quiz & Flashcard</h3>
+            <p>Học và ôn lại gọn.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Thống kê học tập</h3>
+            <p>Theo dõi tiến độ.</p>
+          </article>
         </div>
-      </div>
-    </section>
-
-    <section id="download" class="section reveal">
-      <div class="section-heading">
-        <span class="section-heading__eyebrow">Download</span>
-        <h2>Chọn nơi tải KQuiz</h2>
-        <p>Android đã có sẵn. Google Play, App Store và Web App vẫn đang hoàn thiện.</p>
-      </div>
-
-      <div class="platform-grid">
-        <article class="platform-card platform-card--primary">
-          <span class="platform-card__badge">Available now</span>
-          <h3>Android APK</h3>
-          <p>Bản phát hành hiện tại để cài trực tiếp trên điện thoại Android.</p>
-
-          <div class="platform-card__hero">
-            <img src="./assets/hero/logo-k.jpg" alt="" aria-hidden="true">
-            <div>
-              <span>KQuiz</span>
-              <strong>APK chính thức cho Android</strong>
-            </div>
-          </div>
-
-          <ul class="platform-card__meta">
-            <li>Version 1.0.2</li>
-            <li>Android 11+</li>
-            <li>Tải trực tiếp</li>
-          </ul>
-
-          <a class="platform-card__action" href="./downloads/KquizV1.0.2.apk" download>Tải KquizV1.0.2.apk</a>
-        </article>
-
-        <article class="platform-card">
-          <span class="platform-card__badge platform-card__badge--soon">Coming soon</span>
-          <h3>Google Play</h3>
-          <p>Sẽ mở khi bản phát hành trên cửa hàng hoàn thiện.</p>
-          <button class="platform-card__action platform-card__action--disabled" type="button" disabled>Coming soon</button>
-        </article>
-
-        <article class="platform-card">
-          <span class="platform-card__badge platform-card__badge--soon">Coming soon</span>
-          <h3>iOS App Store</h3>
-          <p>Đang chuẩn bị cho phiên bản iPhone và iPad.</p>
-          <button class="platform-card__action platform-card__action--disabled" type="button" disabled>Coming soon</button>
-        </article>
-
-        <article class="platform-card platform-card--wide">
-          <span class="platform-card__badge platform-card__badge--soon">Coming soon</span>
-          <h3>Web App</h3>
-          <p>Bản web sẽ xuất hiện sau khi trải nghiệm đa nền tảng hoàn tất.</p>
-          <button class="platform-card__action platform-card__action--disabled" type="button" disabled>Coming soon</button>
-        </article>
-      </div>
-    </section>
-
-    <section id="features" class="section reveal">
-      <div class="section-heading">
-        <span class="section-heading__eyebrow">Core features</span>
-        <h2>Chỉ giữ những chức năng chính</h2>
-        <p>Không viết dài. Chỉ giới thiệu đúng các phần người dùng dùng nhiều nhất trong app.</p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card">
-          <span class="feature-card__icon feature-card__icon--teal">PDF</span>
-          <h3>Nhập từ file</h3>
-          <p>PDF, TXT, ảnh.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-card__icon feature-card__icon--green">SET</span>
-          <h3>Bộ học</h3>
-          <p>Tạo bộ học và quay lại nhanh.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-card__icon feature-card__icon--violet">QZ</span>
-          <h3>Quiz & Flashcard</h3>
-          <p>Học theo kiểu kiểm tra hoặc ôn thẻ.</p>
-        </article>
-
-        <article class="feature-card">
-          <span class="feature-card__icon feature-card__icon--peach">GO</span>
-          <h3>Thống kê học tập</h3>
-          <p>Theo dõi mục tiêu và tiến độ mỗi ngày.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="showcase" class="section showcase reveal">
-      <div class="section-heading section-heading--compact">
-        <span class="section-heading__eyebrow">Responsive showcase</span>
-        <h2>Căn riêng cho desktop và mobile</h2>
-        <p>Desktop rộng rãi, mobile dọc gọn. Không còn chồng layout lên chính poster nữa.</p>
-      </div>
-
-      <div class="showcase-grid">
-        <article class="showcase-card">
-          <div class="showcase-card__head">
-            <span>Desktop</span>
-            <strong>Hero ngang, CTA gọn và rõ</strong>
-          </div>
-          <img
-            src="./assets/hero/hero-desktop.png"
-            alt="Bản xem trước giao diện KQuiz trên desktop"
-            loading="lazy"
-          >
-        </article>
-
-        <article class="showcase-card showcase-card--mobile">
-          <div class="showcase-card__head">
-            <span>Mobile</span>
-            <strong>Bố cục dọc riêng cho điện thoại</strong>
-          </div>
-          <img
-            src="./assets/hero/hero-mobile.png"
-            alt="Bản xem trước giao diện KQuiz trên điện thoại"
-            loading="lazy"
-          >
-        </article>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <div>
-        <strong>KQuiz</strong>
-        <p>Trang tải chính thức dành cho bản Android hiện tại.</p>
-      </div>
-
-      <div class="site-footer__links">
-        <a href="#download">Tải app</a>
-        <a href="#features">Tính năng</a>
-        <a href="#showcase">Xem layout</a>
-      </div>
-
-      <p class="site-footer__status">Android APK sẵn sàng • Các nền tảng khác đang phát triển</p>
+  <footer class="footer">
+    <div class="footer__inner">
+      <strong>KQuiz</strong>
+      <p>Android APK sẵn sàng • Các nền tảng khác đang phát triển</p>
     </div>
   </footer>
 
