@@ -565,28 +565,28 @@ a {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    gap: 12px 10px;
+    gap: 10px 8px;
     min-height: auto;
-    padding: 14px 0 12px;
+    padding: 12px 0 10px;
   }
 
   .brand {
     grid-column: 1 / -1;
-    gap: 10px;
+    gap: 8px;
   }
 
   .brand__icon {
-    width: 42px;
-    height: 42px;
-    border-radius: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
   }
 
   .brand__copy strong {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
   }
 
   .brand__copy small {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
   }
 
   .topbar__cta {
@@ -598,55 +598,56 @@ a {
     order: 0;
     width: auto;
     justify-content: flex-start;
-    gap: 8px;
+    gap: 6px;
     padding: 0;
     border: 0;
     background: transparent;
   }
 
   .topbar__link {
-    min-height: 36px;
-    padding: 0 14px;
+    min-height: 34px;
+    padding: 0 13px;
+    font-size: 0.86rem;
     border: 1px solid rgba(255, 255, 255, 0.08);
     background: rgba(255, 255, 255, 0.04);
   }
 
   .hero {
-    padding-top: 6px;
+    padding-top: 4px;
   }
 
   .hero__image {
-    width: calc(100% - 16px);
-    border-radius: 26px;
+    width: calc(100% - 12px);
+    border-radius: 24px;
   }
 
   .hero__image img {
-    height: min(126vw, 520px);
+    height: min(104vw, 430px);
     width: 100%;
-    object-position: center 10%;
+    object-position: center 14%;
   }
 
   .hero__downloads {
-    width: calc(100% - 24px);
-    margin-top: -42px;
-    gap: 10px;
-    padding: 14px;
-    border-radius: 24px;
+    width: calc(100% - 16px);
+    margin-top: -62px;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 22px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(246, 248, 255, 0.95));
   }
 
   .hero__downloads-head {
-    gap: 5px;
-    margin-bottom: 2px;
+    gap: 4px;
+    margin-bottom: 1px;
   }
 
   .hero__downloads-head strong {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
   }
 
   .hero__downloads-head p {
-    font-size: 0.88rem;
-    line-height: 1.55;
+    font-size: 0.82rem;
+    line-height: 1.45;
     max-width: 28ch;
   }
 
@@ -655,29 +656,38 @@ a {
   }
 
   .download-button {
-    min-height: 74px;
-    padding: 14px 14px 13px;
+    min-height: 62px;
+    padding: 12px 12px 11px;
   }
 
   .download-button span {
-    font-size: 0.98rem;
+    font-size: 0.88rem;
   }
 
   .download-button small {
-    font-size: 0.82rem;
+    font-size: 0.72rem;
+  }
+
+  .features {
+    padding-top: 18px;
+  }
+
+  .features__head {
+    margin-bottom: 18px;
   }
 
   .features__head h2 {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
   .features__grid {
     grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .download-button,
   .feature {
-    padding: 18px 16px;
+    padding: 16px 14px;
   }
 
   .footer__inner {
@@ -689,7 +699,7 @@ a {
 @media (max-width: 380px) {
   .hero__downloads {
     grid-template-columns: 1fr;
-    margin-top: -28px;
+    margin-top: -46px;
   }
 }
 
