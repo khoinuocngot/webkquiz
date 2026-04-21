@@ -119,12 +119,16 @@ a {
   padding: 20px 0 0;
 }
 
-.hero__inner,
 .download__inner,
 .features__inner,
 .footer__inner {
   width: var(--content-width);
   margin: 0 auto;
+}
+
+.hero__inner {
+  width: 100%;
+  margin: 0;
 }
 
 .hero__image img {
