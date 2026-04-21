@@ -116,10 +116,10 @@ a {
 }
 
 .hero {
+  position: relative;
   padding: 20px 0 0;
 }
 
-.download__inner,
 .features__inner,
 .footer__inner {
   width: var(--content-width);
@@ -142,18 +142,6 @@ a {
   border-radius: 0;
 }
 
-.download {
-  padding: 32px 0 0;
-}
-
-.download__inner {
-  padding: 0 0 12px;
-}
-
-.download__copy {
-  margin-bottom: 18px;
-}
-
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -168,7 +156,6 @@ a {
   text-transform: uppercase;
 }
 
-.download__copy h1,
 .features__head h2 {
   margin: 14px 0 8px;
   font-family: "Cormorant Garamond", serif;
@@ -177,7 +164,6 @@ a {
   font-weight: 700;
 }
 
-.download__copy p,
 .features__head p,
 .feature p {
   margin: 0;
@@ -185,10 +171,20 @@ a {
   line-height: 1.7;
 }
 
-.download__buttons {
+.hero__downloads {
+  position: absolute;
+  left: clamp(24px, 4vw, 72px);
+  bottom: clamp(26px, 5vw, 72px);
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
   gap: 14px;
+  width: min(430px, calc(100% - 48px));
+  padding: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  border-radius: 24px;
+  background: rgba(246, 247, 251, 0.94);
+  box-shadow: 0 18px 42px rgba(88, 103, 163, 0.14);
+  z-index: 2;
 }
 
 .download-button {
@@ -228,7 +224,7 @@ a {
 }
 
 .features {
-  padding: 34px 0 0;
+  padding: 28px 0 0;
 }
 
 .features__head {
@@ -305,8 +301,16 @@ a {
     padding-top: 10px;
   }
 
-  .download {
-    padding-top: 24px;
+  .hero__downloads {
+    position: static;
+    width: var(--content-width);
+    margin: 16px auto 0;
+    grid-template-columns: 1fr;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .features {
@@ -329,12 +333,10 @@ a {
     gap: 18px;
   }
 
-  .download__copy h1,
   .features__head h2 {
     font-size: 2.15rem;
   }
 
-  .download__buttons,
   .features__grid {
     grid-template-columns: 1fr;
   }
