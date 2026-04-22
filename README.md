@@ -6,7 +6,7 @@ Landing page tĩnh cho KQuiz, tối ưu để deploy trực tiếp lên GitHub P
 
 - Giao diện landing page mới theo hướng `premium, ít chữ, nhiều hình`
 - Hero riêng cho desktop và mobile
-- Nút tải thật cho Android APK: `KquizV1.0.2.apk`
+- Nút tải thật cho Android APK: `KquizV1.0.3.apk`
 - Google Play, App Store và Web App đang để `Coming soon`
 - Không cần build step, không cần framework, không cần backend
 
@@ -18,7 +18,7 @@ Landing page tĩnh cho KQuiz, tối ưu để deploy trực tiếp lên GitHub P
 - `assets/hero/logo-k.jpg`: logo KQuiz
 - `assets/hero/hero-desktop.png`: ảnh minh họa hero cho desktop
 - `assets/hero/hero-mobile.png`: ảnh minh họa hero cho mobile
-- `downloads/KquizV1.0.2.apk`: file APK tải trực tiếp
+- `downloads/KquizV1.0.3.apk`: file APK tải trực tiếp
 - `.nojekyll`: giúp GitHub Pages chạy static thuần
 
 ## Cập nhật APK bằng Git Bash
